@@ -1,10 +1,16 @@
 .navbar {
-	padding: 1em;
-	/* background-color: #0D3E10; */
+	padding: 2em 1em;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
 }
 
 .navbar-logo {
 	width: 130px;
+}
+
+.nav-btn-container {
+	display: flex;
+	column-gap: 10px;
 }
