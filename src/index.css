@@ -1,4 +1,15 @@
-body {
+:root {
+	--brown: #093009;
+	--brown-light: #0D3E10;
+}
+
+* {
 	box-sizing: border-box;
+	padding: 0;
 	margin: 0;
+}
+
+body {
+	height: 100vh;
+	background: radial-gradient(circle at 50% -20%, var(--brown) 25%, #000000 70%);
 }

@@ -1,8 +1,17 @@
-import './App.css';
+import Navbar from "./components/Navbar/Navbar";
+
+import "./App.css";
 
 function App() {
 	return (
-		<h1>FeLiNa</h1>
+		<>
+			<Navbar />
+			<div className="btn-container">
+				<button>Characters</button>
+				<button>Episodes</button>
+				<button>Quotes</button>
+			</div>
+		</>
 	);
 }
 
