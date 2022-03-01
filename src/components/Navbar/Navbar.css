@@ -1,4 +1,4 @@
-.navbar {
+.navbar-container {
 	padding: 2em 1em;
 	display: flex;
 	flex-direction: column;
@@ -10,7 +10,6 @@
 	width: 130px;
 }
 
-.nav-btn-container {
-	display: flex;
-	column-gap: 10px;
+.navbar-container a {
+	padding: 16px;
 }

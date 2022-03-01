@@ -1,8 +1,10 @@
+import { Heading } from "@chakra-ui/react";
+
 import "./Episodes.css";
 
 const Episodes = () => {
 	return (
-		<h1>Episodes</h1>
+		<Heading>Episodes</Heading>
 	);
 }
 

@@ -1,8 +1,10 @@
+import { Heading } from "@chakra-ui/react";
+
 import "./Characters.css";
 
 const Characters = () => {
 	return (
-		<h1>Characters</h1>
+		<Heading>Characters</Heading>
 	);
 }
 

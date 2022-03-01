@@ -1,8 +1,10 @@
+import { Heading } from "@chakra-ui/react";
+
 import "./Quotes.css";
 
 const Quotes = () => {
 	return (
-		<h1>Quotes</h1>
+		<Heading>Quotes</Heading>
 	);
 }
 
