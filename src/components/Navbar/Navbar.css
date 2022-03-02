@@ -1,13 +1,12 @@
 .navbar-container {
-	padding: 2em 1em;
+	padding: 2em 1em 3em 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	row-gap: 20px;
 }
 
 .navbar-logo {
-	width: 130px;
+	width: 150px;
 }
 
 .navbar-container a {

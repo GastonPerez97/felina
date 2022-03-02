@@ -16,17 +16,21 @@ import "./App.css";
 const App = () => {
 	return (
 		<ChakraProvider theme={ theme }>
-			<Navbar />
+			<header>
+				<Navbar />
+			</header>
 
-			<Container maxW="container.xl" p={0}>
-				<Routes>
-					<Route path="/" element={<Home />}/>
-					<Route path="characters" element={<Characters />} />
-					<Route path="episodes" element={<Episodes />} />
-					<Route path="quotes" element={<Quotes />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-			</Container>
+			<main>
+				<Container maxW="container.xl" p={0}>
+					<Routes>
+						<Route path="/" element={<Home />}/>
+						<Route path="characters" element={<Characters />} />
+						<Route path="episodes" element={<Episodes />} />
+						<Route path="quotes" element={<Quotes />} />
+						<Route path="*" element={<NotFound />} />
+					</Routes>
+				</Container>
+			</main>
 		</ChakraProvider>
 	);
 }
