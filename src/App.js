@@ -15,7 +15,7 @@ import "./App.css";
 
 const App = () => {
 	return (
-		<ChakraProvider theme={ theme }>
+		<ChakraProvider theme={theme}>
 			<header>
 				<Navbar />
 			</header>
@@ -23,7 +23,7 @@ const App = () => {
 			<main>
 				<Container maxW="container.xl" p={0}>
 					<Routes>
-						<Route path="/" element={<Home />}/>
+						<Route path="/" element={<Home />} />
 						<Route path="characters" element={<Characters />} />
 						<Route path="episodes" element={<Episodes />} />
 						<Route path="quotes" element={<Quotes />} />
@@ -31,8 +31,19 @@ const App = () => {
 					</Routes>
 				</Container>
 			</main>
+
+			<footer>
+				Developed by&nbsp;
+				<a
+					href="https://gastonperez.ar/en"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Gast&oacute;n P&eacute;rez
+				</a>
+			</footer>
 		</ChakraProvider>
 	);
-}
+};
 
 export default App;
