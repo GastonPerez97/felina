@@ -4,7 +4,10 @@ const SeasonCard = props => {
 	return (
 		<WrapItem>
 			<VStack as="article" spacing={4}>
-				<Image src={props.imageUrl} h={"300px"} />
+				<Image
+					src={props.imageUrl}
+					h={{ base: "200px", lg: "300px" }}
+				/>
 				<Text align={"center"}>{props.text}</Text>
 			</VStack>
 		</WrapItem>

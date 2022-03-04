@@ -19,13 +19,15 @@ const Home = () => {
 
 			<Stack
 				as="section"
-				direction="row"
+				direction={{ base: "column", md: "row" }}
 				align="center"
 				justify="space-between"
-				mt="20"
-				spacing="56"
+				mt={{ base: 10, md: 20 }}
+				spacing={{ base: 10, md: 20, xl: 52 }}
 			>
-				<Heading fontSize="100px">ABOUT</Heading>
+				<Heading fontSize={{ base: "45px", sm: "55px", md: "100px" }}>
+					ABOUT
+				</Heading>
 
 				<Stack direction="column" spacing={9}>
 					<Box>
@@ -73,15 +75,17 @@ const Home = () => {
 
 			<Stack
 				as="section"
-				direction="row-reverse"
+				direction={{ base: "column", md: "row-reverse" }}
 				align="center"
 				justify="space-between"
 				mt="36"
-				spacing="52"
+				spacing={{ base: 10, xl: 52 }}
 			>
-				<Heading fontSize="100">SEASONS</Heading>
+				<Heading fontSize={{ base: "45px", sm: "55px", md: "100px" }}>
+					SEASONS
+				</Heading>
 
-				<Wrap direction={"row"} spacing={10} justify="center">
+				<Wrap direction={"row"} spacing={"8"} justify="center">
 					<SeasonCard imageUrl={season1} text="Season 1 (2008)" />
 					<SeasonCard imageUrl={season2} text="Season 2 (2009)" />
 					<SeasonCard imageUrl={season3} text="Season 3 (2010)" />
@@ -95,13 +99,18 @@ const Home = () => {
 
 			<Stack
 				as="section"
-				direction="row"
+				direction={{ base: "column", md: "row" }}
 				align="center"
 				justify="space-between"
 				mt="36"
-				spacing="56"
+				spacing={{ base: 10, md: 20, xl: 52 }}
 			>
-				<Heading fontSize="100px">BETTER CALL SAUL</Heading>
+				<Heading
+					fontSize={{ base: "45px", sm: "55px", md: "100px" }}
+					textAlign={"center"}
+				>
+					BETTER CALL SAUL
+				</Heading>
 
 				<Stack direction="column" spacing={9}>
 					<Box>

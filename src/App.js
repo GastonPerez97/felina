@@ -21,7 +21,7 @@ const App = () => {
 			</header>
 
 			<main>
-				<Container maxW="container.xl" p={0}>
+				<Container maxW="container.xl">
 					<Routes>
 						<Route path="/" element={<Home />} />
 						<Route path="characters" element={<Characters />} />

@@ -8,10 +8,23 @@ import "./Navbar.css";
 const Navbar = () => {
 	return (
 		<nav className="navbar-container">
-			<Image className="navbar-logo" src={ logo } alt="FeLiNa logo" />
+			<Image className="navbar-logo" src={logo} alt="FeLiNa logo" />
 
-			<ButtonGroup mt="8" variant="outline" isAttached>
-				<Button fontWeight="light" p="0" me="10" variant="outline">
+			<ButtonGroup
+				mt="8"
+				variant="outline"
+				isAttached
+				flexDirection={{ base: "column", sm: "row" }}
+			>
+				<Button
+					fontWeight="light"
+					p="0"
+					me={[0, 10]}
+					mb={[4, 0]}
+					mx="auto"
+					w="80px"
+					variant="outline"
+				>
 					<NavLink to="/">Home</NavLink>
 				</Button>
 
@@ -31,6 +44,6 @@ const Navbar = () => {
 			</ButtonGroup>
 		</nav>
 	);
-}
+};
 
 export default Navbar;
