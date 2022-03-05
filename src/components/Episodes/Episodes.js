@@ -49,7 +49,7 @@ const Episodes = () => {
 		);
 	}, []);
 
-	const getEpisodeElementsBySeason = seasonNumber => {
+	const getTableRowElementBySeason = seasonNumber => {
 		return episodes
 			.filter(episode => episode.season === seasonNumber)
 			.map(episode => {
@@ -81,7 +81,7 @@ const Episodes = () => {
 						<Th>Characters</Th>
 					</Tr>
 				</Thead>
-				<Tbody>{getEpisodeElementsBySeason(seasonNumber)}</Tbody>
+				<Tbody>{getTableRowElementBySeason(seasonNumber)}</Tbody>
 			</Table>
 		);
 	};

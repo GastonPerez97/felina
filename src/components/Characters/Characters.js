@@ -52,6 +52,7 @@ const Characters = () => {
 	}, [characters, inputData]);
 
 	const handleInput = event => setInputData(event.target.value);
+
 	return (
 		<>
 			<Flex direction="column" align="center" rowGap={5} mb={8}>
@@ -60,7 +61,7 @@ const Characters = () => {
 				</Heading>
 
 				<Input
-					placeholder="Enter character's name..."
+					placeholder="Search by character's name..."
 					w={"80"}
 					onChange={handleInput}
 					value={inputData}
