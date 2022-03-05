@@ -1,11 +1,19 @@
 import { useEffect, useState, useMemo } from "react";
-import { Heading, Wrap, WrapItem, Skeleton } from "@chakra-ui/react";
+import {
+	Heading,
+	Wrap,
+	WrapItem,
+	Skeleton,
+	Input,
+	Flex,
+} from "@chakra-ui/react";
 
 import CharacterCard from "./CharacterCard";
 import { getAllCharacters } from "../../services/breaking-bad-api";
 
 const Characters = () => {
 	const [characters, setCharacters] = useState([]);
+	const [inputData, setInputData] = useState("");
 
 	useEffect(() => {
 		getAllCharacters().then(characters => {
@@ -27,15 +35,37 @@ const Characters = () => {
 			));
 	}, []);
 
-	const characterElements = characters.map(character => {
-		return <CharacterCard key={character.char_id} {...character} />;
-	});
+	const characterElements = useMemo(() => {
+		return characters
+			.filter(
+				character =>
+					character.name
+						.toLowerCase()
+						.includes(inputData.toLowerCase()) ||
+					character.nickname
+						.toLowerCase()
+						.includes(inputData.toLowerCase())
+			)
+			.map(character => {
+				return <CharacterCard key={character.char_id} {...character} />;
+			});
+	}, [characters, inputData]);
 
+	const handleInput = event => setInputData(event.target.value);
 	return (
 		<>
-			<Heading fontSize="45px" mb={10} textAlign="center">
-				CHARACTERS
-			</Heading>
+			<Flex direction="column" align="center" rowGap={5} mb={8}>
+				<Heading fontSize="45px" textAlign="center">
+					CHARACTERS
+				</Heading>
+
+				<Input
+					placeholder="Enter character's name..."
+					w={"80"}
+					onChange={handleInput}
+					value={inputData}
+				/>
+			</Flex>
 
 			{characters.length === 0 ? (
 				<Wrap spacing="30px" justify="center">
