@@ -4,8 +4,10 @@ import "./Quotes.css";
 
 const Quotes = () => {
 	return (
-		<Heading>Quotes</Heading>
+		<Heading fontSize="45px" mb={10} textAlign="center">
+			QUOTES
+		</Heading>
 	);
-}
+};
 
 export default Quotes;

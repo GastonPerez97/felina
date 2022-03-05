@@ -4,8 +4,10 @@ import "./Episodes.css";
 
 const Episodes = () => {
 	return (
-		<Heading>Episodes</Heading>
+		<Heading fontSize="45px" mb={10} textAlign="center">
+			EPISODES
+		</Heading>
 	);
-}
+};
 
 export default Episodes;
