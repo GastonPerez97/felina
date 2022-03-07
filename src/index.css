@@ -10,18 +10,20 @@
 }
 
 body {
-	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh !important;
 	background-color: #000000 !important;
 	background-image: url(./assets/img/bg.png), url(./assets/img/bg-bottom.png) !important;
 	background-position: 0 top, 0 bottom !important;
 	background-repeat: no-repeat, no-repeat !important;
-	background-size: contain, contain !important;
+	background-size: 100%, 100% !important;
 }
 
 footer {
+	margin-top: auto;
 	text-align: center;
-	padding: 4em 0 3em 0;
-	margin-top: 144px;
+	padding: 3em 0;
 	width: 100%;
 }
 

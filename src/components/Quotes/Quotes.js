@@ -65,11 +65,15 @@ const Quotes = () => {
 			</Heading>
 
 			{quotes.length === 0 ? (
-				<Stack mx="auto" w="75%">
+				<Stack mx="auto" w={{ base: "full", sm: "75%" }}>
 					{loadingSkeleton}
 				</Stack>
 			) : (
-				<Accordion allowToggle w={"75%"} mx="auto">
+				<Accordion
+					allowToggle
+					w={{ base: "full", sm: "75%" }}
+					mx="auto"
+				>
 					{getAccordionItemByCharacter("Walter White")}
 					{getAccordionItemByCharacter("Jesse Pinkman")}
 					{getAccordionItemByCharacter("Hank Schrader")}

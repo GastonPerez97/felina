@@ -31,17 +31,6 @@ const App = () => {
 					</Routes>
 				</Container>
 			</main>
-
-			<footer>
-				Developed by&nbsp;
-				<a
-					href="https://gastonperez.ar/en"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Gast&oacute;n P&eacute;rez
-				</a>
-			</footer>
 		</ChakraProvider>
 	);
 };

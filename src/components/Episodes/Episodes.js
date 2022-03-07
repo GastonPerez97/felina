@@ -56,11 +56,11 @@ const Episodes = () => {
 				return (
 					<Tr key={nanoid()}>
 						<Td w={"10%"}>{episode.episode}</Td>
-						<Td w={"20%"}>{episode.title}</Td>
+						<Td w={"30%"}>{episode.title}</Td>
 						<Td w={"20%"}>{episode.air_date}</Td>
-						<Td w={"50%"}>
+						<Td w={"40%"}>
 							{episode.characters.map(character => (
-								<Tag m={1} key={nanoid()}>
+								<Tag key={nanoid()} size="sm" m={1}>
 									{character}
 								</Tag>
 							))}
@@ -95,7 +95,7 @@ const Episodes = () => {
 			{episodes.length === 0 ? (
 				<Stack>{loadingSkeleton}</Stack>
 			) : (
-				<Tabs variant="enclosed" isFitted>
+				<Tabs variant="enclosed" isFitted overflowX="auto">
 					<TabList>
 						<Tab>Season 1 (2008)</Tab>
 						<Tab>Season 2 (2009)</Tab>

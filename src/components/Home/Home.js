@@ -102,7 +102,7 @@ const Home = () => {
 				direction={{ base: "column", md: "row" }}
 				align="center"
 				justify="space-between"
-				mt="36"
+				my="36"
 				spacing={{ base: 10, md: 20, xl: 52 }}
 			>
 				<Heading
