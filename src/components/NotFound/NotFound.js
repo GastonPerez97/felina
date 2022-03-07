@@ -1,11 +1,21 @@
-import { Heading } from "@chakra-ui/react";
+import { Heading, Image } from "@chakra-ui/react";
 
-import "./NotFound.css";
+import brokenPlateImg from "../../assets/img/broken-plate.png";
 
 const NotFound = () => {
 	return (
-		<Heading>NotFound</Heading>
+		<>
+			<Image
+				src={brokenPlateImg}
+				alt="Breaking Bad Broken Plate for 404 Not Found Page"
+				mx="auto"
+				mb={16}
+				px={10}
+			/>
+
+			<Heading textAlign="center">404 - Not Found</Heading>
+		</>
 	);
-}
+};
 
 export default NotFound;

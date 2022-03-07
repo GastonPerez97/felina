@@ -17,7 +17,7 @@ const Navbar = () => {
 				flexDirection={{ base: "column", sm: "row" }}
 			>
 				<Button
-					fontWeight="light"
+					fontWeight="normal"
 					p="0"
 					me={[0, 10]}
 					mb={[4, 0]}
@@ -29,15 +29,15 @@ const Navbar = () => {
 				</Button>
 
 				<ButtonGroup variant="outline" isAttached>
-					<Button fontWeight="light" p="0">
+					<Button fontWeight="normal" p="0">
 						<NavLink to="characters">Characters</NavLink>
 					</Button>
 
-					<Button fontWeight="light" p="0">
+					<Button fontWeight="normal" p="0">
 						<NavLink to="episodes">Episodes</NavLink>
 					</Button>
 
-					<Button fontWeight="light" p="0">
+					<Button fontWeight="normal" p="0">
 						<NavLink to="quotes">Quotes</NavLink>
 					</Button>
 				</ButtonGroup>

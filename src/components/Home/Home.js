@@ -7,8 +7,6 @@ import season3 from "../../assets/img/season3.jpg";
 import season4 from "../../assets/img/season4.jpg";
 import season5 from "../../assets/img/season5.jpg";
 
-import "./Home.css";
-
 const Home = () => {
 	return (
 		<>
